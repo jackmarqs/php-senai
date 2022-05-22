@@ -1,0 +1,19 @@
+Algoritmo "ex08"
+//Faça um algoritmo que leia um número e mostre uma mensagem indicando se este
+//número é par ou ímpar e se é positivo ou negativo.
+Var
+num: real
+
+Inicio
+    leia(num)
+    se num > 0 entao
+        escreval("Positivo!")
+    senao
+        escreval("Negativo!")
+    fimse
+    se num % 2 = 0 entao
+        escreval("Par!")
+    senao
+        escreval("Ímpar!")
+    fimse
+Fimalgoritmo

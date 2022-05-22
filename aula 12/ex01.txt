@@ -1,0 +1,21 @@
+Algoritmo "ex01"
+//Faça uma matriz de 3ª ordem.
+Var
+m: vetor[1..3, 1..3] de inteiro
+i, j: inteiro
+Inicio
+    para i de 1 ate 3 faca
+        para j de 1 ate 3 faca
+            escreva("Digite o termo",i," x",j," da matriz: ")
+            leia(m[i,j])
+        fimpara
+    fimpara
+    escreval
+    escreval("Matriz inserida:")
+    para i de 1 ate 3 faca
+        para j de 1 ate 3 faca
+            escreva(m[i,j]:5)
+        fimpara
+        escreval
+    fimpara
+Fimalgoritmo

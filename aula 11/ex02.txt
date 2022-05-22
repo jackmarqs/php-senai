@@ -1,0 +1,30 @@
+Algoritmo "ex02"
+//Ler uma matriz 5X5 e gerar outra em que cada elemento é o cubo do elemento
+//respectivo na matriz original. Imprima depois o elemento do meio desta nova
+//matriz;
+Var
+matrix: vetor[1..5, 1..5] de inteiro
+i, j: inteiro
+Inicio
+    para i de 1 ate 5 faca
+        para j de 1 até 5 faca
+            escreva("Escreva o número para a posição",i," x",j," da matriz: ")
+            leia(matrix[i,j])
+        fimpara
+    fimpara
+    limpatela
+    escreval("Matriz digitada:")
+    para i de 1 ate 5 faca
+        para j de 1 até 5 faca
+            escreva(matrix[i,j]:7)
+        fimpara
+        escreval()
+    fimpara
+    escreval("Matriz digitada elavada ao cubo:")
+    para i de 1 ate 5 faca
+        para j de 1 até 5 faca
+            escreva(matrix[i,j]^3:7)
+        fimpara
+        escreval()
+    fimpara
+Fimalgoritmo

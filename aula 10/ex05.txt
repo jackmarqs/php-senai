@@ -1,0 +1,41 @@
+Algoritmo "ex05"
+//Crie um programa que armazene 10 números digitados pelo usuário em dois
+//vetores: um somente para números pares, e outro somente para números
+//ímpares. Após, exiba os valores dos dois vetores na tela, em sequência. Obs.:
+//As posições que não receberem valores exibirão o número zero. Não se preocupe
+//com isso.
+//
+//Modifique o programa anterior para não aceitar a entrada do número zero, e
+//requisitar a digitação de outro número neste caso.
+Var
+vetpar, vetimpar: vetor [1..10] de inteiro
+i, num: inteiro
+Inicio
+    para i <- 1 até 10 faca
+        escreva("Escreva o ",i,"º número: ")
+        leia(num)
+        se num = 0 entao
+            enquanto num = 0 faca
+                escreval("O número digitado precisa ser difente de 0!")
+                escreval("Digite um número válido: ")
+                leia(num)
+            fimenquanto
+        fimse
+        se num % 2 = 0 entao
+            vetpar[i] <- num
+        senao
+            vetimpar[i] <- num
+        fimse
+    fimpara
+    limpatela
+    escreval
+    escreval("Vetor de número ímpares:")
+    para i <- 1 até 10 faca
+        escreva(vetimpar[i],", ")
+    fimpara
+    escreval
+    escreval("Vetor de número ímpares:")
+    para i <- 1 até 10 faca
+        escreva(vetpar[i],", ")
+    fimpara
+Fimalgoritmo

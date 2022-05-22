@@ -1,0 +1,17 @@
+Algoritmo "ex03"
+//Pedir para o usuário digitar quatro notas e imprimir na tela sua média
+//aritmética.
+Var
+num, num1, num2, num3, media, res: real
+
+funcao media(a, b, c, d: real):real
+inicio
+    res <- (a + b + c + d)/4
+    escreva("O média é",res)
+fimfuncao
+
+Inicio
+    escreval("Digite quatro notas: ")
+    leia(num, num1, num2, num3)
+    res <- media(num, num1, num2, num3)
+Fimalgoritmo

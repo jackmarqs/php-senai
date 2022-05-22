@@ -1,0 +1,25 @@
+Algoritmo "ex02"
+//Escreva um algoritmo que solicite ao usuário a entrada de 5 nomes, e que exiba
+//a lista desses nomes na tela. Após exibir essa lista, o programa deve mostrar
+//também os nomes na ordem inversa em que o usuário os digitou, um por linha.
+Var
+vet: vetor [1..5] de caractere
+i: inteiro
+Inicio
+    para i <- 1 até 5 faca
+        escreva("Escreva o ",i,"º nome: ")
+        leia(vet[i])
+    fimpara
+    limpatela
+    escreval
+    escreval("================================")
+    para i <- 1 até 5 faca
+        escreval("O ",i,"º nome digitado foi: ",vet[i])
+    fimpara
+    escreval("================================")
+    escreval("================================")
+    para i <- 5 até 1 passo -1 faca
+        escreval("O ",i,"º nome digitado foi: ",vet[i])
+    fimpara
+    escreval("================================")
+Fimalgoritmo

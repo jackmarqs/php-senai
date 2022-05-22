@@ -1,0 +1,35 @@
+Algoritmo "ex04"
+//Faça uma matriz 3x3 e mostre os valores pares sendo selecionados entre chaves
+//e mostre quantos números pares foram inseridos
+Var
+matrix: vetor[1..3, 1..3] de inteiro
+i, j, pares: inteiro
+Inicio
+    para i de 1 ate 3 faca
+        para j de 1 até 3 faca
+            escreva("Escreva o número para a posição",i," x",j," da matriz: ")
+            leia(matrix[i,j])
+        fimpara
+    fimpara
+    limpatela
+    escreval("Matriz digitada:")
+    para i de 1 ate 3 faca
+        para j de 1 até 3 faca
+            escreva(matrix[i,j]:7)
+        fimpara
+        escreval()
+    fimpara
+    escreval("Matriz com números pares sendo selecionados:")
+    para j de 1 ate 3 faca
+        para i de 1 até 3 faca
+            se matrix[i,j] % 2 = 0 entao
+                escreva("{",matrix[i,j],"}   ")
+                pares <- pares + 1
+            senao
+                escreva(matrix[i,j],"   ")
+            fimse
+        fimpara
+        escreval()
+    fimpara
+    escreva("Total de números pares = ", pares)
+Fimalgoritmo

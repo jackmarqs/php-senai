@@ -1,0 +1,48 @@
+Algoritmo "ex13"
+//Fazer um algoritmo que leia o idade, sexo e cor do cabelo de uma pessoa ate
+//que o usuário informe que não deseja continuar inserindo nomes. No final, o
+//programa deve mostrar quantos homens com mais de 18 anos tem o cabelo castanho
+//e quantas mulheres entre 25 e 30 anos são loiras. Obs: A pessoa deve inserir o
+//sexo com M para masculino e F para feminino. A cor do cabelo deve ser 1 –
+//preto, 2- castanho, 3 – loiro e 4 - Ruivo
+Var
+op, cabelo, cont, idade, homi, muie: inteiro
+nome, sexo: caractere
+
+Inicio
+
+    repita
+        limpatela
+        escreval("Escolha uma das opções:")
+        escreval("[1] Digite um nome")
+        escreval("[0] Sair")
+        leia(op)
+        limpatela
+        se op = 1 entao
+            escreva("Informe o nome: ")
+            leia(nome)
+            limpatela
+            escreva("Digite sua idade: ")
+            leia(idade)
+            limpatela
+            escreva("Digite seu sexo (F/M):")
+            leia(sexo)
+            limpatela
+            escreval("Digite a cor de cabelo:")
+            escreval("[1] Preto")
+            escreval("[2] Castanho")
+            escreval("[3] Loiro")
+            escreval("[4] Ruivo")
+            leia(cabelo)
+            limpatela
+            se (sexo = "M") e (idade > 18) e (cabelo = 2) entao
+                homi <- homi + 1
+            fimse
+            se (sexo = "F") e (idade >= 25) e (idade <= 30) e (cabelo = 3) entao
+                muie <- muie + 1
+            fimse
+        fimse
+    ate op = 0
+    escreval(homi," homens têm mais de 18 anos e possuem cabelo castanho")
+    escreva(muie," mulheres têm entre 25 e 30 anos e possuem cabelos loiros")
+Fimalgoritmo

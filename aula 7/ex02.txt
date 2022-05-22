@@ -1,0 +1,12 @@
+Algoritmo "ex02"
+//Faça um algoritmo que conte de 10 até 1
+Var
+cont: inteiro
+
+Inicio
+    cont <- 10
+    enquanto cont >= 1 faca
+        escreval(cont)
+        cont <- cont - 1
+    fimenquanto
+Fimalgoritmo

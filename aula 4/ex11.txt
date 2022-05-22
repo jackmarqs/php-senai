@@ -1,0 +1,47 @@
+Algoritmo "ex11"
+//O cardápio de uma lanchonete é o seguinte:
+//Especificação Preço unitário
+//100 Cachorro quente 1,10
+//101 Bauru simples 1,30
+//102 Bauru c/ovo 1,50
+//103 Hamburger 1,10
+//104 Cheeseburger 1,30
+//105 Refrigerante 1,00
+//Escrever um algoritmo que leia o código do item pedido, a quantidade e
+//calcule o valor a ser pago por aquele lanche.
+//Considere que a cada execução somente será calculado um item.
+Var
+cod, quant: inteiro
+total: real
+Inicio
+    escreval("Digite o produto desejado: ")
+    escreval("[100] Cachorro quente 1,10")
+    escreval("[101] Bauru simples 1,30")
+    escreval("[102] Bauru c/ovo 1,50")
+    escreval("[103] Hamburger 1,10")
+    escreval("[104] Cheeseburger 1,30")
+    escreval("[105] Refrigerante 1,00")
+    leia(cod)
+    escreva("Digite a quantidade: ")
+    leia(quant)
+    limpatela
+    se cod = 100 entao
+        total <- quant * 1.10
+    fimse
+    se cod = 101 entao
+        total <- quant * 1.30
+    fimse
+    se cod = 102 entao
+        total <- quant * 1.50
+    fimse
+    se cod = 103 entao
+        total <- quant * 1.10
+    fimse
+    se cod = 104 entao
+        total <- quant * 1.30
+    fimse
+    se cod = 105 entao
+        total <- quant * 1.0
+    fimse
+    escreva("O total do seu pedido é R$", total)
+Fimalgoritmo

@@ -1,0 +1,24 @@
+Algoritmo "ex07"
+//Elabore um algoritmo que leia 5 valores inteiros e apresente na tela o maior
+//e o menor deles.
+Var
+min, max, num, cont: inteiro
+
+Inicio
+    cont <- 1
+    min <- 100000
+    max <- -100000
+    enquanto cont < 6 faca
+        escreva("Digite o ", cont,"º número: ")
+        leia(num)
+        cont <- cont + 1
+        se num > max entao
+            max <- num
+        fimse
+        se num < min entao
+            min <- num
+        fimse
+    fimenquanto
+    limpatela
+    escreva("Maior =",max," e Menor =",min)
+Fimalgoritmo

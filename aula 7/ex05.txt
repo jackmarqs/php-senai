@@ -1,0 +1,14 @@
+Algoritmo "ex05"
+//Fazer um Algoritmo que mostre o fatorial de um número.
+Var
+num, fat: inteiro
+Inicio
+    escreva("Digite um número: ")
+    leia(num)
+    fat <- 1
+    enquanto num <> 0 faca
+        fat <- fat * num
+        num <- num - 1
+    fimenquanto
+    escreva(fat)
+Fimalgoritmo

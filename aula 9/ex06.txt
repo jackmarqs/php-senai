@@ -1,0 +1,20 @@
+Algoritmo "ex06"
+//Escreva um algoritmo para ler as dimensões de um triângulo (base e altura),
+//calcular e escrever a área do triângulo. Sabendo que para calcular a área
+//devemos usar a fórmula: A=(base x altura)/2
+Var
+base, altura, res: real
+
+procedimento area(a,b: real)
+inicio
+    res <- (a * b) / 2
+    escreva("A área do triângulo é", res)
+fimprocedimento
+
+Inicio
+    escreval("Digite a base: ")
+    leia(base)
+    escreval("Digite a altura: ")
+    leia(altura)
+    area(base, altura)
+Fimalgoritmo

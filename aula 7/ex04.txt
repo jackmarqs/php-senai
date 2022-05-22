@@ -1,0 +1,15 @@
+Algoritmo "ex04"
+//Faça um contador que conte de onde o usuário quiser até onde ele quiser.
+Var
+cont, num: inteiro
+
+Inicio
+    escreva("Digite um número: ")
+    leia(num)
+    limpatela
+    cont <- 1
+    enquanto cont <= num faca
+        escreval(cont)
+        cont <- cont + 1
+    fimenquanto
+Fimalgoritmo

@@ -1,0 +1,19 @@
+Algoritmo "ex09"
+//Fazer um algoritmo que retorne se ele é ou não um número primo.
+Var
+num, cont, primo: inteiro
+Inicio
+    escreva("Digite um número: ")
+    leia(num)
+    repita
+        cont <- cont + 1
+        se num%cont = 0 entao
+            primo <- primo + 1
+        fimse
+    ate cont = num
+    se primo > 2 entao
+        escreva("Não é primo")
+    senao
+        escreva("É primo")
+    fimse
+Fimalgoritmo

@@ -1,0 +1,18 @@
+Algoritmo "ex03"
+//Faça um algoritmo que escreva na tela os números de um número inicial a um
+//número final. Os números inicial e final devem ser informados pelo usuário.
+Var
+num1, num2: inteiro
+
+Inicio
+    escreva("Digite o número inicial: ")
+    leia(num1)
+    limpatela
+    escreva("Digite o número final: ")
+    leia(num2)
+    limpatela
+    enquanto num1 <= num2 faca
+        escreval(num1)
+        num1 <- num1 + 1
+    fimenquanto
+Fimalgoritmo

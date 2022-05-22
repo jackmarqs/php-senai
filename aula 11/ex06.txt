@@ -1,0 +1,31 @@
+Algoritmo "ex06"
+//Faça uma matriz de 4ª ordem e calcule: a soma dos valores da diagonal
+//principal, o produto entre os valores da segunda linha e o maior valor da 3ª
+//coluna.
+Var
+matrix: vetor[1..4, 1..4] de inteiro
+i, j, maior: inteiro
+Inicio
+    para i de 1 ate 4 faca
+        para j de 1 até 4 faca
+            escreva("Escreva o número para a posição",i," x",j," da matriz: ")
+            leia(matrix[i,j])
+        fimpara
+    fimpara
+    limpatela
+    escreval("Matriz digitada:")
+    para i de 1 ate 4 faca
+        para j de 1 até 4 faca
+            se j = 3 entao
+                se matrix[i,j] > maior entao
+                    maior <- matrix[i,j]
+                fimse
+            fimse
+            escreva(matrix[i,j]:5)
+        fimpara
+        escreval()
+    fimpara
+    escreval("Soma dos valores da diagonal principal =", matrix[1,1] + matrix[2,2] + matrix[3,3] + matrix[4,4])
+    escreval("Produto entre os valores da segunda linha =", matrix[2,1] * matrix[2,2] * matrix[2,3] * matrix[2,4])
+    escreva("O maior valor da terceira coluna é =", maior)
+Fimalgoritmo

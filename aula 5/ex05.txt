@@ -1,0 +1,16 @@
+Algoritmo "ex05"
+//Escrever um algoritmo que imprima a tabuada de um número informado pelo
+//usuário.
+Var
+cont, num: inteiro
+
+Inicio
+    escreva("Digite um número: ")
+    leia(num)
+    limpatela
+    cont <- 1
+    enquanto cont <= 10 faca
+        escreval(num," *",cont," =",num*cont)
+        cont <- cont + 1
+    fimenquanto
+Fimalgoritmo

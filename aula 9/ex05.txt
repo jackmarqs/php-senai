@@ -1,0 +1,17 @@
+Algoritmo "ex05"
+//Pedir para o usuário informar o ano em que nasceu e o programa deve retornar
+//a idade do usuário.
+Var
+ano, res: inteiro
+
+funcao idade(a: inteiro):inteiro
+inicio
+    retorne 2022 - a
+fimfuncao
+
+Inicio
+    escreval("Digite o ano em que nasceu: ")
+    leia(ano)
+    res <- idade(ano)
+    escreva("Sua idade é",res," anos")
+Fimalgoritmo

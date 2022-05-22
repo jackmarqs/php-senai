@@ -1,0 +1,21 @@
+Algoritmo "ex03"
+//Faça uma matriz de 4ª ordem e exiba o 3º elemento da 2º linha.
+Var
+matrix: vetor[1..4, 1..4] de inteiro
+i, j: inteiro
+Inicio
+    para i de 1 ate 4 faca
+        para j de 1 até 4 faca
+            escreva("Escreva o número para a posição",i," x",j," da matriz: ")
+            leia(matrix[i,j])
+        fimpara
+    fimpara
+    limpatela
+    para i de 1 ate 4 faca
+        para j de 1 até 4 faca
+            escreva(matrix[i,j]:5)
+        fimpara
+        escreval()
+    fimpara
+    escreval("O terceiro elemento da segunda linha é ", matrix[2,3])
+Fimalgoritmo

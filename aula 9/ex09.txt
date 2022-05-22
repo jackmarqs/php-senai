@@ -1,0 +1,19 @@
+Algoritmo "ex09"
+//Uma empresa de desenvolvimento de softwares paga a seu vendedor um fixo de
+//R$500 por mês, mais um bônus de R$50 por sistema vendido. Faça um algoritmo
+//que leia quantos softwares o funcionário vendeu e determine o salário total
+//do funcionário. Mostre as informações que você achar necessário.
+Var
+soft: inteiro
+
+funcao salario(a:inteiro):inteiro
+inicio
+    retorne a * 50 + 500
+fimfuncao
+
+Inicio
+    escreva("Digite o número de softwares vendidos: ")
+    leia(soft)
+    soft <- salario(soft)
+    escreva("O saldo total é", soft)
+Fimalgoritmo

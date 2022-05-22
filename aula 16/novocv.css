@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(243, 228, 181);
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.principal{
+    background-color: floralwhite;
+    margin: 0 400px 0 400px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 65%;
+}
+
+.lado_esquerdo{
+    background-color: rgb(127, 67, 170);
+}
+
+.lado_direito{
+    background-color: whitesmoke;
+}
+
+.foto_perfil{
+    margin: 50px auto 50px 13%;
+    border-radius: 50%;
+}
+
+.titulo_contato{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo_habilidades{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bloco_info{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17px;
+    margin-bottom: 16px;
+    width: 100%;;
+    color: white;
+    align-items: center;
+    font-size: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.nome{
+    font-family:'Verdana';
+    text-transform: uppercase;
+    color:navy;
+    margin-left: 27px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 180%;
+}
+
+a:link{
+    text-decoration: none;
+    color: aqua;
+}
+
+.profissao{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 70px;
+    color:rgb(161, 141, 252);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo_perfil{
+    margin-left: 40px;
+    color:rgb(161, 141, 252);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.perfil{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(109, 109, 109);
+    text-align: justify;
+}
+
+.titulo_experiencia{
+    margin-left: 40px;
+    color:rgb(161, 141, 252);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.experiencia{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(109, 109, 109);
+    text-align: justify;
+}
+
+.cargo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 40px;
+    color: rgb(90, 90, 90);
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+
+.periodo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 40px;
+    color: rgba(148, 148, 148, 0.801);
+    margin-bottom: 7px;
+}
+
+.titulo_formacao{
+    margin-left: 40px;
+    margin-top: 50px;
+    color:rgb(161, 141, 252);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.material-icons{
+    color: white;
+}
+
+.caixa{
+    margin-left: 40px;
+}
+.input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

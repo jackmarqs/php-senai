@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Resultado final</h1>
+    <div> 
+        Primeira nota: <input type="text" name="nota1" id="nota1">
+        <br>
+        Segunda nota: <input type="text" name="nota2" id="nota2">
+        <br>
+        Terceira nota :<input type="text" name="nota3" id="nota3">
+        <br>
+        Quarta nota: <input type="text" name="nota4" id="nota4">
+        <br>
+        <input type="button" value="Calcular" id="calcular" onclick="calc()">
+    </div>
+    <div id="notaFinal">Resultado aqui</div>
+<script>
+    function calc(){
+        var n1 = Number(window.document.getElementById("nota1").value)
+        var n2 = Number(window.document.getElementById("nota2").value)
+        var n3 = Number(window.document.getElementById("nota3").value)
+        var n4 = Number(window.document.getElementById("nota4").value)
+        var nota = window.document.getElementById("notaFinal")
+        var media = (n1 + n2 + n3 + n4)/4
+        if (media > 6) {
+            nota.innerText = `A sua média final é ${media} e você está aprovado!`
+        } else {
+            nota.innerText = `A sua média final é ${media} e você está reprovado!`
+        }
+    }
+</script>
+</body>
+</html>

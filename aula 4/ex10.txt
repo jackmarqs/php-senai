@@ -1,0 +1,23 @@
+Algoritmo "ex10"
+//Construa um algoritmo que calcule o peso ideal de uma pessoa. Dados de
+//entrada: altura e sexo. Fórmulas para cálculo do peso: peso ideal de
+//homem = (72,7 x altura) - 58 peso ideal da mulher = (62,1 x altura) - 44,7
+Var
+peso, altura: real
+sexo: caractere
+
+
+Inicio
+    escreva("Digite sua altura: ")
+    leia(altura)
+    escreva("Digite seu sexo (F/M): ")
+    leia(sexo)
+    limpatela
+    se (sexo = "F") entao
+        peso <- (62.1 * altura) - 44.7
+        escreva("Moça, o seu peso ideal é",peso)
+    senao
+        peso <- (72.7 * altura) - 58
+        escreva("Rapaz, o seu peso ideal é",peso)
+    fimse
+Fimalgoritmo

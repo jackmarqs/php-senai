@@ -1,0 +1,17 @@
+Algoritmo "ex03"
+//Elabore um algoritmo que leia do teclado o sexo de uma pessoa. Se o sexo
+//digitado for M ou F, escrever na tela “Sexo válido!”. Caso contrário, informar
+//“Sexo inválido!”;
+Var
+x: caractere
+
+Inicio
+      escreva("Digite seu sexo (F/M): ")
+      leia(x)
+
+      se (x = "F") ou (x = "M") entao
+         escreva("Sexo válido!")
+      senao
+         escreva("Sexo inválido!")
+      fimse
+Fimalgoritmo

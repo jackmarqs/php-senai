@@ -1,0 +1,18 @@
+Algoritmo "ex04"
+//Elabore um algoritmo a ler 4 notas de um aluno (de 1 a 10). Após calcular a
+//média das notas, apresentar a mensagem “Aprovada” se o aluno tiver obtido
+//média maior ou igual a 6, caso contrário, apresentar “Reprovado”.
+Var
+n1, n2, n3, n4, media: real
+
+Inicio
+      escreval("Digite as quatro notas do aluno: ")
+      leia(n1,n2,n3,n4)
+      limpatela
+      media <- (n1 + n2 + n3 + n4)/4
+      se media >= 6 entao
+         escreva("Aprovada!")
+      senao
+         escreva("Reprovado!")
+      fimse
+Fimalgoritmo

@@ -1,0 +1,15 @@
+Algoritmo "ex01"
+//Pedir para o usuário digitar um número e imprimir este número na tela.
+Var
+    num, res: inteiro
+
+funcao imprime(a:inteiro):inteiro
+inicio
+    escreva("O número digitado é",a)
+fimfuncao
+
+Inicio
+    escreva("Digite um número: ")
+    leia(num)
+    res <- imprime(num)
+Fimalgoritmo

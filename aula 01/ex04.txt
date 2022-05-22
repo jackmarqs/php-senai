@@ -1,0 +1,25 @@
+Algoritmo "ex04"
+//Faça um algoritmo que receba 5 pessoas e mostre se a ela é de maior ou não. O
+//programa deve pedir o nome e a idade da pessoa e retornar ambos.
+Var
+idade, idadef, cont: inteiro
+nome, nomef: caractere
+Inicio
+    escreva("Digite o seu nome: ")
+    leia(nome)
+    escreva("Digite o sua idade: ")
+    leia(idade)
+    idadef <- idade
+    enquanto cont < 4 faca
+        escreva("Digite o seu nome: ")
+        leia(nome)
+        escreva("Digite o sua idade: ")
+        leia(idade)
+        se idadef < idade entao
+           idadef <- idade
+           nomef <- nome
+        fimse
+        cont <- cont + 1
+    fimenquanto
+    escreva("A pessoa mais velha é ",nomef," e ela possui",idadef," anos!")
+Fimalgoritmo

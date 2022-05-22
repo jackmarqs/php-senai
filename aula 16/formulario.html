@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Devs</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to right ,blue,rgb(4, 111, 211));
+            color: white;
+            font-size: 15px;
+        }
+
+        fieldset{
+
+            border: 5px dashed rgb(7, 0, 61);
+            padding: 20px;
+        }
+
+        legend{
+            font-size: 15pt;
+            text-align: center;
+            border-style: solid;
+            border-radius: 15px;
+            background-color: rgb(7, 1, 87);
+            padding: 10px;
+        }
+
+        .box{
+            background-color: rgba(0, 0, 0, 0.384);
+            position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           padding: 5px;
+           border-radius: 10px;
+        }
+
+        .input{
+            border-radius: 10px;
+            padding: 4px;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width:100%;
+            color: white;
+            letter-spacing: 2px;
+
+        }
+
+        #datanasc{
+            border-radius: 10px;
+    
+        }
+
+    
+        #sobrevc{
+            border-radius: 15px;
+        }
+        
+        .label{
+            font: 12pt arial;
+        }
+
+        #submit{
+            border-radius: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: rgba(14, 161, 172, 0.541);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #submit:hover{
+            background-color: rgba(67, 67, 105, 0.411);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <fieldset>
+            <legend>Cadastro de Devs</legend>
+            <form action="redirecionamento.html" method="post">
+                <div><label for="nome" class="label">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="input" required>
+                </div>
+                <br>
+    
+                <div>
+                    <label for="telefone" class="label">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" class="input">
+                </div>
+                <br>
+                
+                <div>
+                    <label for="email" class="label">Email:</label>
+                <input type="email" name="email" id="email" class="input">
+                </div>
+                <br>
+    
+                <div>
+                    <label for="datanasc" class="label">Data de nascimento</label>
+                <input type="date" name="datanasc" id="datanasc">
+                </div>
+    
+                <p class="label">Sexo</p>
+                <div>
+                    <input type="radio" name="sexo" id="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                </div>
+    
+                <div>
+                    <input type="radio" name="sexo" id="feminino">
+                    <label for="masculino">Feminino</label>
+                </div>
+                <p class="label">Liguagens que domina</p>
+                <div>
+                    <input type="checkbox" name="linguagens" id="php">
+                    <label for="php">PHP</label>
+    
+                    <input type="checkbox" name="linguagens" id="js">
+                    <label for="js">Javascript</label>
+    
+                    <input type="checkbox" name="linguagens" id="csharp">
+                    <label for="csharp">C#</label>
+    
+                    <input type="checkbox" name="linguagens" id="python">
+                    <label for="python">Python</label>
+                </div>
+                <br>
+    
+                <div>
+                    <label for="" class="label">Horario de preferencia: </label>
+                    <select name="horario" id="horario">
+                        <option value="manha" >Manha</option>
+                        <option value="tarde" selected >Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <br>
+    
+                <label for="" class="label">Fale sobre voce</label> 
+                <div>
+                    <textarea name="sobrevc" id="sobrevc" cols="30" rows="5" ></textarea>
+                </div>
+                <br>
+    
+                <input type="submit" value="Cadastrar" id="submit">
+    
+            </form>
+    
+        </fieldset>
+    </div>
+    
+
+
+
+</body>
+
+</html>

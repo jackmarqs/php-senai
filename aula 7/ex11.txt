@@ -1,0 +1,29 @@
+Algoritmo "ex11"
+//Desenvolver um algoritmo que leia um número não determinado de valores e
+//calcule e escreva a média aritmética dos valores lidos, a quantidade de valores
+//positivos, a quantidade de valores negativos e o percentual de valores negativos
+//e positivos. A execução se encarra quando o usuário insere 0.
+Var
+num, posi, nega, per_nega, per_posi, media: real
+
+Inicio
+    repita
+        escreva("Digite um número: ")
+        leia(num)
+        media <- media + num
+        se num > 0 entao
+            posi <- posi + 1
+        fimse
+        se num < 0 entao
+            nega <- nega + 1
+        fimse
+    ate num = 0
+    media <- media /(posi + nega)
+    per_nega <- nega * 100 / (posi + nega)
+    per_posi <- posi * 100 / (posi + nega)
+    escreval("A média aritmética é ",media:3:2)
+    escreval("A quantiade de valores positivos é",posi)
+    escreval("A quantidade de valores negativos é",nega)
+    escreval("O percentual de valores positivos é ",per_posi:3:2,"%")
+    escreval("O percentual de valores negativos é ",per_nega:3:2,"%")
+Fimalgoritmo

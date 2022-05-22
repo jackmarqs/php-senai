@@ -1,0 +1,18 @@
+Algoritmo "ex08"
+//Faça o mesmo que antes, porém, ao invés de ler 10 números, o programa deverá
+//ler e somar números até que o valor digitado seja zero ( 0 ).
+Var
+cont, num, total: inteiro
+
+Inicio
+    cont <- 1
+    num <- 1
+    enquanto num <> 0 faca
+        escreva("Digite o ", cont,"º número: ")
+        leia(num)
+        cont <- cont + 1
+        total <- total + num
+    fimenquanto
+    limpatela
+    escreva("Total =",total)
+Fimalgoritmo

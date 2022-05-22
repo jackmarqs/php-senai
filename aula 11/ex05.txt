@@ -1,0 +1,19 @@
+Algoritmo "ex05"
+//Faça uma matriz identidade de 3ª ordem. Matriz identidade é aquela em que os
+//valores da diagonal principal é igual a 1 e o restante 0. Matriz de 3ª ordem
+//é uma matriz 3x3.
+Var
+matrix: vetor[1..3, 1..3] de inteiro
+i, j: inteiro
+Inicio
+    para i de 1 ate 3 faca
+        para j de 1 até 3 faca
+            se i = j entao
+                escreva(matrix[i,j]+1:5)
+            senao
+                escreva(matrix[i,j]:5)
+            fimse
+        fimpara
+        escreval()
+    fimpara
+Fimalgoritmo

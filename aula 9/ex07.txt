@@ -1,0 +1,33 @@
+Algoritmo "ex07"
+//ler o nome de uma pessoa, a sua idade e o seu salário e mostrar as informações.
+Var
+nome: caractere
+idade: inteiro
+salario: real
+
+procedimento name(a: caractere)
+inicio
+    escreval("Seu nome é ", a)
+fimprocedimento
+
+procedimento age(b: inteiro)
+inicio
+    escreval("Sua idade é", b)
+fimprocedimento
+
+procedimento money(c: real)
+inicio
+    escreval("Seu salário é", c)
+fimprocedimento
+
+Inicio
+    escreval("Digite seu nome: ")
+    leia(nome)
+    escreval("Digite sua idade: ")
+    leia(idade)
+    escreval("Digite seu salario: ")
+    leia(salario)
+    name(nome)
+    age(idade)
+    money(salario)
+Fimalgoritmo

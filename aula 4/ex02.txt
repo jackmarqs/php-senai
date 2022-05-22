@@ -1,0 +1,16 @@
+Algoritmo "ex02"
+//Escrever um algoritmo que leia dois valores inteiros distintos e informe qual
+//é o maior
+Var
+a,b: inteiro
+
+Inicio
+      escreva("Digite os dois números: ")
+      leia(a,b)
+
+      se (a > b) entao
+         escreva("O primeiro número é maior que o segundo!")
+      senao
+         escreva("O segundo número é maior que o primeiro!")
+      fimse
+Fimalgoritmo

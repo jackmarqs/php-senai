@@ -1,0 +1,29 @@
+Algoritmo "ex05"
+//Altere o algoritmo anterior para que seja lido do teclado, além das notas,
+//o sexo do aluno (M ou F). Se for masculino, o resultado deverá ser precedido
+//de “Caro aluno, seu resultado é: “. Se for feminino, o resultado deverá ser
+//precedido de “Cara aluna, seu resultado é: “.
+Var
+n1, n2, n3, n4, media: real
+sexo: caractere
+Inicio
+      escreval("Digite as quatro notas do aluno: ")
+      leia(n1,n2,n3,n4)
+      escreva("Digite o sexo (F/M):")
+      leia(sexo)
+      limpatela
+      media <- (n1 + n2 + n3 + n4)/4
+      se media >= 6 entao
+         se(sexo = "F") entao
+             escreva("Cara aluna, o resultado é: Aprovada!")
+         senao
+             escreva("Caro aluno, o resultado é: Aprovado!")
+         fimse
+      senao
+         se(sexo = "F") entao
+             escreva("Cara aluna, o resultado é: Reprovada!")
+         senao
+             escreva("Caro aluno, o resultado é: Reprovado!")
+         fimse
+      fimse
+Fimalgoritmo

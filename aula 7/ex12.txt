@@ -1,0 +1,29 @@
+Algoritmo "ex12"
+//Faça um algoritmo que tenha 3 opções:
+//? 1 – Para contar de 1 ate 10
+//? 2 – Para contar de 10 ate 1
+//? 3 – sair
+Var
+op, cont: inteiro
+
+Inicio
+      escreval("Digite uma opção:")
+      escreval("[1] Contar de 1 até 10")
+      escreval("[2] Contar de 10 até 1")
+      escreval("[3] Sair ")
+      leia(op)
+      se op = 1 entao
+          cont <- 1
+          enquanto cont <= 10 faca
+              escreval(cont)
+              cont <- cont + 1
+          fimenquanto
+      fimse
+      se op = 2 entao
+         cont <- 10
+         enquanto cont >= 1 faca
+             escreval(cont)
+             cont <- cont - 1
+         fimenquanto
+      fimse
+Fimalgoritmo

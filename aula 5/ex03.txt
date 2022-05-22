@@ -1,0 +1,15 @@
+Algoritmo "ex03"
+//Faça um algoritmo que conte até o número que o usuário informar
+Var
+cont, num: inteiro
+
+Inicio
+    escreva("Digite um número: ")
+    leia(num)
+    limpatela
+    cont <- 1
+    enquanto cont <= num faca
+        escreval(cont)
+        cont <- cont + 1
+    fimenquanto
+Fimalgoritmo

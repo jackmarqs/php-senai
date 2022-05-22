@@ -1,0 +1,16 @@
+Algoritmo "ex10"
+//Faça um algoritmo que leia vários números e informe quantos desses números
+//entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido o algoritmo
+//deverá cessar sua execução.
+Var
+num, cont: inteiro
+Inicio
+    repita
+        escreva("Digite um número: ")
+        leia(num)
+        se (num > 100) e (num < 200) entao
+            cont <- cont + 1
+        fimse
+    ate num = 0
+    escreva("A quantidade de números digitados entre 100 e 200 é",cont)
+Fimalgoritmo

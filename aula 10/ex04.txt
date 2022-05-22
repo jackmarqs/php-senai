@@ -1,0 +1,31 @@
+Algoritmo "ex04"
+//Crie um programa que armazene 10 números digitados pelo usuário em dois
+//vetores: um somente para números pares, e outro somente para números
+//ímpares. Após, exiba os valores dos dois vetores na tela, em sequência. Obs.:
+//As posições que não receberem valores exibirão o número zero. Não se preocupe
+//com isso.
+Var
+vetpar, vetimpar: vetor [1..10] de inteiro
+i, num: inteiro
+Inicio
+    para i <- 1 até 10 faca
+        escreva("Escreva o ",i,"º número: ")
+        leia(num)
+        se num % 2 = 0 entao
+            vetpar[i] <- num
+        senao
+            vetimpar[i] <- num
+        fimse
+    fimpara
+    limpatela
+    escreval
+    escreval("Vetor de número ímpares:")
+    para i <- 1 até 10 faca
+        escreva(vetimpar[i],", ")
+    fimpara
+    escreval
+    escreval("Vetor de número ímpares:")
+    para i <- 1 até 10 faca
+        escreva(vetpar[i],", ")
+    fimpara
+Fimalgoritmo

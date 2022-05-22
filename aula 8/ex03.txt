@@ -1,0 +1,14 @@
+Algoritmo "ex03"
+//Desenvolver um algoritmo que efetue a soma de todos os números ímpares que
+//são múltiplos de três e que se encontram no conjunto dos números de 1 até 500.
+Var
+cont, soma: inteiro
+Inicio
+    repita
+        cont <- cont + 3
+        se cont % 2 <> 0 entao
+            soma <- soma + cont
+        fimse
+    ate cont > 495
+    escreva("A soma dos múltiplos de 3 de 1 até 500 é", soma)
+Fimalgoritmo

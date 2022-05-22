@@ -1,0 +1,16 @@
+Algoritmo "ex02"
+//Pedir para o usuário digitar dois números e imprimir a soma dos dois números.
+Var
+    num, num1: inteiro
+
+procedimento imprime(a, b:inteiro)
+inicio
+    escreval("O primeiro número digitado é",a)
+    escreva("O segundo número digitado é",b)
+fimprocedimento
+
+Inicio
+    escreva("Digite dois número: ")
+    leia(num, num1)
+    imprime(num, num1)
+Fimalgoritmo

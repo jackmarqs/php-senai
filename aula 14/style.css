@@ -1,0 +1,14 @@
+body{
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color:rgb(165, 165, 165);
+}
+div{
+    font-family:Verdana;
+}
+body img{
+    opacity: 0.2;
+    position: absolute;
+    width: 20%;
+    margin-left: 500px;
+}

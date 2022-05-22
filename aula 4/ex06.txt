@@ -1,0 +1,28 @@
+Algoritmo "ex06"
+//A escola “APRENDER” faz o pagamento de seus professores por hora/aula. Faça
+//um algoritmo que calcule e exiba o salário de um professor. Sabe-se que o
+//valor da hora/aula segue a tabela abaixo: Professor Nível 1 R$12,00 por
+//hora/aula Professor Nível 2 R$17,00 por hora/aula Professor Nível 3 R$25,00
+//por hora/aula
+Var
+horas, total: real
+nivel: inteiro
+Inicio
+      escreval("Digite as horas trabalhadas: ")
+      leia(horas)
+      escreva("Digite o nível: ")
+      leia(nivel)
+      limpatela
+      se nivel = 1 entao
+          total <- horas * 12
+          escreva("O seu sálario é: ",total:6:2)
+      fimse
+      se nivel = 2 entao
+          total <- horas * 17
+          escreva("O seu sálario é: ",total:6:2)
+      fimse
+      se nivel = 3 entao
+          tota <- horas * 25
+          escreva("O seu sálario é: ",total:6:2)
+      fimse
+Fimalgoritmo

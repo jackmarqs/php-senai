@@ -1,0 +1,17 @@
+Algoritmo "ex07"
+//Escrever um programa de computador que leia 10 números inteiros e, ao final,
+//apresente a soma de todos os números lidos;
+Var
+cont, num, total: inteiro
+
+Inicio
+    cont <- 1
+    enquanto cont < 11 faca
+        escreva("Digite o ", cont,"º número: ")
+        leia(num)
+        cont <- cont + 1
+        total <- total + num
+    fimenquanto
+    limpatela
+    escreva("Total =",total)
+Fimalgoritmo

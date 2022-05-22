@@ -1,0 +1,21 @@
+Algoritmo "ex01"
+//Crie um algoritmo que o usuário entre com vários números inteiros e positivos e
+//imprima o produto dos números ímpares e a soma dos números pares. O programa
+//deve ser finalizado quando digitado o número 0
+Var
+num, produto, soma: inteiro
+Inicio
+    produto <- 1
+    num <- 1
+    enquanto num <> 0 faca
+        escreva("Digite um número: ")
+        leia(num)
+        se (num % 2 <> 0) entao
+            produto <- produto * num
+        senao
+            soma <- soma + num
+        fimse
+    fimenquanto
+    escreval("O produto dos número ímpares é",produto)
+    escreva("A soma dos números pares é", soma)
+Fimalgoritmo

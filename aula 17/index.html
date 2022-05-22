@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulário Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="redireciona.html" method="post">
+        <div class="titulo">sistema de gestão acadêmico</div>
+        <div class="subt">manutenção dos usuários do sistema interno</div>
+        <div class="box">
+            <div class="lado_esquerdo">
+                <div class="login">
+                    <label for="login" class="label">Login</label>
+                </div>
+                <div class="senha">
+                    <label for="senha" class="label">Senha</label>
+                </div>
+                <div class="status">
+                    <label for="status" class="label">Status</label>
+                </div>
+                <div class="tipo">
+                    <label for="tipo" class="label">Tipo</label>
+                </div>
+                <div class="data">
+                    <label for="data" class="label">Data</label>
+                </div>
+                <div class="perfil">
+                    <label for="perfil" class="label">Perfil</label>
+                </div>
+                <div class="obs">
+                    <label for="obs" class="label">Observações</label>
+                </div>
+                <div class="mod">
+                    <label for="mod" class="label">Módulos</label>
+                </div>
+                <div>
+                    <button>Cadastrar</button>
+                    <button>Excluir</button>
+                </div>
+            </div>
+            <div class="lado_direito">
+                <div class="login1">
+                    <input type="text" name="login" id="login" class="input" required>
+                </div>
+                <div class="senha1">
+                    <input type="password" name="senha" id="senha" class="input" required>
+                </div>
+                <div class="status1">
+                    <select name="status" id="status">
+                        <option value="selecionar" selected>Selecionar</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="Inativo">Inativo</option>
+                    </select>
+                </div>
+                <div class="tipo1">
+                    <input type="radio" name="tipo" id="tec">
+                    <label for="tec">Técnico</label>
+                    <input type="radio" name="tipo" id="prof">
+                    <label for="prof">Professor</label>
+                    <input type="radio" name="tipo" id="aluno">
+                    <label for="aluno">Aluno</label>
+                </div>
+                <div class="data1">
+                    <input type="date" name="data" id="data" class="input" required>
+                </div>
+                <div class="perfil1">
+                    <input type="radio" name="perfil" id="conv">
+                    <label for="conv">Convidado</label>
+                    <input type="radio" name="perfil" id="adm">
+                    <label for="adm">Administrador</label>
+                </div>
+                <div class="obs1">
+                    <textarea cols="40" rows="4" name="obs" id="obs" class="input" required></textarea>
+                </div>
+                <div class="mod1">
+                    <input type="checkbox" name="mod" id="mod">
+                    <label for="mod">Compras</label> 
+                    <input type="checkbox" name="mod" id="mod">
+                    <label for="mod">Biblioteca</label> 
+                    <input type="checkbox" name="mod" id="mod">
+                    <label for="mod">Acadêmico</label> 
+                    <br><br>
+                    <input type="checkbox" name="mod" id="mod">
+                    <label for="mod">Recursos humanos</label> 
+                    <input type="checkbox" name="mod" id="mod">
+                    <label for="mod">Documentação</label> 
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

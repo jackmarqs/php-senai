@@ -1,0 +1,12 @@
+Algoritmo "ex06"
+//Escrever um algoritmo que gera e escreve os números ímpares entre 100 e 200;
+Var
+cont: inteiro
+
+Inicio
+    cont <- 101
+    enquanto cont < 200 faca
+        escreval(cont)
+        cont <- cont + 2
+    fimenquanto
+Fimalgoritmo

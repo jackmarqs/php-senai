@@ -1,0 +1,30 @@
+Algoritmo "ex01"
+//Escrever um algoritmo que leia o nome e as três notas obtidas por um aluno
+//durante o semestre. Calcular a sua média (aritmética), informar o nome e sua
+//menção aprovado (media >= 7), Reprovado (media <= 5) e Recuperação
+//(media entre 5.1 a 6.9)
+Var
+nome: caractere
+n1, n2, n3, media: real
+
+Inicio
+      escreva("Digite seu nome: ")
+      leia(nome)
+      limpatela
+      escreval("Digite as três notas do aluno ",nome,":")
+      leia(n1,n2,n3)
+      media <- (n1 + n2 + n3)/3
+      limpatela
+      se media <= 5.0 entao
+          escreval("A média do aluno ",nome," é ",media:2:2)
+          escreva("Reprovado!")
+      fimse
+      se (media > 5.0) e (media < 7) entao
+          escreval("A média do aluno ",nome," é ",media:2:2)
+          escreva("Recuperação!")
+      fimse
+      se media >= 7.0 entao
+          escreval("A média do aluno ",nome," é ",media:2:2)
+          escreva("Aprovado!")
+      fimse
+Fimalgoritmo
